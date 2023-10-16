@@ -1,0 +1,38 @@
+.sample-text {
+    color: var(--white-color);
+    padding: 2rem;
+    line-height: 1.5rem;
+}
+
+.dialog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-container button {
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+dialog {
+    width: 50%;
+    height: 80%;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+img.close-button {
+    cursor: pointer;
+    position: relative;
+    left: 95%;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(1px);
+}
