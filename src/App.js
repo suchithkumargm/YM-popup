@@ -7,7 +7,12 @@ const App = () => {
 
 	return (
 		<div className='main'>
-            <PopUp />
+			<PopUp>
+				<div>child 1</div>
+				<div>child 2</div>
+				<div>child 3</div>
+			</PopUp>
+
 		</div>
 	);
 }

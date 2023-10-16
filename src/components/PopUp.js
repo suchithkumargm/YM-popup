@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import closeIcon from '../icons/close.svg';
 import './PopUp.css';
 
-const Popup = () => {
+const Popup = ({children}) => {
     const dialogRef = useRef(null);
 
     const openDialog = () => {
@@ -32,11 +32,7 @@ const Popup = () => {
                 <button onClick={openDialog}>Open Popup</button>
                 <dialog ref={dialogRef}>
                     <img src={closeIcon} onClick={closeDialog} className='close-button' />
-                    <div className="popup-content">
-                        <div>child 1</div>
-                        <div>child 2</div>
-                        <div>child 3</div>
-                    </div>
+                    <div className="popup-content">{children}</div>
                 </dialog>
             </div>
         </div>
